@@ -119,6 +119,6 @@ default = "<%= customOptions.vpc_security_group_ids.encodeAsJson().toString()%>"
 }
 variable "tags" {
   description = "tags"
-  type        = map(any)
+  type        = map(sring)
 default = "<%= customOptions.tf_aws_tags.encodeAsJson().toString()%>"
 }
