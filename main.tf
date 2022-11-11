@@ -15,7 +15,7 @@ resource "aws_instance" "ec2_test" {
   instance_type          = var.instance_type
   availability_zone      = var.availability_zone
   subnet_id              = var.subnet_id
-  vpc_security_group_ids = var.vpc_security_group_ids
+  vpc_security_group_ids = tolist(var.vpc_security_group_ids)
   iam_instance_profile   = var.iam_instance_profile
   ebs_optimized          = var.ebs_optimized
   private_ip             = var.private_ip
