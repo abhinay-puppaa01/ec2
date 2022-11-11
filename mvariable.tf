@@ -114,7 +114,7 @@ default = "<%= customOptions.subnet_id%>"
 }
 variable "vpc_security_group_ids" {
   description = "vpc_security_group_ids"
-  type        =  list
+  type        =  list(string)
 default = "<%= customOptions.vpc_security_group_ids.encodeAsJson().toString()%>"
 }
 variable "tags" {
