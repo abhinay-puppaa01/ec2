@@ -120,5 +120,16 @@ default = "<%= customOptions.vpc_security_group_ids.encodeAsJson().toString()%>"
 variable "tags" {
   description = "tags"
   type        = map(string)
-default = "<%= customOptions.tf_aws_tags.encodeAsJson().toString()%>"
+default = {
+    "CostCenterID" : "CostCenterID"
+    "RequestedBy"   : "IOD"
+    "VCAC Owner" : "VCAC Owner"
+    "Centrify" : "Centrify"
+    "Description" : "Description"
+    "ProjectCode" : "ProjectCode"
+    "SharedInfrastructure" : "SharedInfrastructure"
+    "ApplicationDeploymentCIID" : "ApplicationDeploymentCIID"
+    "ProvisionType" : "ProvisionType"
+  }
+
 }
