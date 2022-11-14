@@ -95,7 +95,8 @@ variable "ami" {
 variable "instance_type" {
   description = "Instance Type"
   type        = string
-default = "<%= customOptions.instance_type%>"
+  default ="t2.micro"
+#default = "<%= customOptions.instance_type%>"
 }
 variable "instance_name" {
   description = "Instance Name"
