@@ -62,7 +62,7 @@ variable "root_block_device_volume_type" {
 variable "root_block_device_volume_size" {
   description = "root_block_device_volume_size"
   type        = string
-  default     = "8"
+  default     = "30"
 }
 
 
