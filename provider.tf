@@ -1,5 +1,5 @@
 provider "aws" {
-  region     = var.region
+  region     = substr(var.availability_zone,0,(length(var.availability_zone)-1))
   access_key = var.access_key
   secret_key = var.secret_key
 }
