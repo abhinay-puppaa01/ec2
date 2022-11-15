@@ -70,11 +70,13 @@ variable "root_block_device_volume_size" {
 variable "access_key" {
   description = "The username of the user account used to access the Morpheus platform"
   type        = string
+  sensitive  = true
 }
 
 variable "secret_key" {
   description = "AWS secret key"
-  type        = string
+   type        = string
+   sensitive  = true
 }
 
 variable "region" {
