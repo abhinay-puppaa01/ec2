@@ -1,4 +1,4 @@
-variable "instance_count" {
+uvariable "instance_count" {
   description = "Private IP address to associate with the instance in a VPC"
   type        = number
   default     = 1
@@ -34,7 +34,7 @@ variable "host_id" {
 variable "host_name" {
   description = "ID of a dedicated host that the instance will be assigned to. Use when an instance is to be launched on a specific dedicated host"
   type        = string
-  default     = "<%= customOptions.hostname%>"
+  default     = "<%= results.'hostname'%>"
 }
 
 variable "ebs_block_device_name" {
