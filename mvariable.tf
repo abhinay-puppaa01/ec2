@@ -31,6 +31,11 @@ variable "host_id" {
   type        = string
   default     = null
 }
+variable "host_name" {
+  description = "ID of a dedicated host that the instance will be assigned to. Use when an instance is to be launched on a specific dedicated host"
+  type        = string
+  default     = "<%= attributes.hostname%>"
+}
 
 variable "ebs_block_device_name" {
   description = "Additional EBS block devices to attach to the instance"
