@@ -95,7 +95,7 @@ variable "region" {
 variable "ami" { 
   description = "Ami"
   type        = string
-  default ="ami-017cdd6dc706848b2"
+  default ="ami-064d05b4fe8515623"
 #default = "<%= customOptions.operating_system%>"
 }
 
