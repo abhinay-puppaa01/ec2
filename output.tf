@@ -83,7 +83,10 @@ output "resource_name" {
   description = "The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`"
   value       = aws_instance.ec2_test[*].tags.Name
 }
-
+output "host_name" {
+  description = "The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`"
+  value       = var.host_name
+}
 
 
 
