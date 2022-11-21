@@ -7,7 +7,7 @@ variable "instance_count" {
 variable "iam_instance_profile" {
   description = "IAM Instance Profile to launch the instance with. Specified as the name of the Instance Profile"
   type        = string
-  default     = null
+  default     = "PFE-EC2-ROLE-BSL"
 }
 
 variable "ebs_optimized" {
@@ -132,15 +132,16 @@ variable "tags" {
   description = "tags"
   type        = map(string)
 default = {
-    "CostCenterID" : "CostCenterID"
+    "CostCenterID" : "2322748"
     "RequestedBy"   : "IOD"
     "VCAC Owner" : "VCAC Owner"
     "Centrify" : "Centrify"
     "Description" : "Description"
-    "ProjectCode" : "ProjectCode"
-    "SharedInfrastructure" : "SharedInfrastructure"
-    "ApplicationDeploymentCIID" : "ApplicationDeploymentCIID"
-    "ProvisionType" : "ProvisionType"
+    "ProjectCode" : "A123456"
+    "SharedInfrastructure" : "No"
+    "ApplicationDeploymentCIID" : "SC2818380"
+    "Deploymenttype" : "newprovision"
+    "ProvisionType" : "IOD"
   }
 
 }
