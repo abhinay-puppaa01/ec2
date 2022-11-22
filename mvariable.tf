@@ -155,7 +155,7 @@ variable "host_name1" {
   default     = "<%=results.generateHostname.Output%>"
 }
 
-variable "host_name1" {
+variable "host_name2" {
   description = "ID of a dedicated host that the instance will be assigned to. Use when an instance is to be launched on a specific dedicated host"
   type        = string
   default     = "<%=results.generate_hostname_output.generate_hostname_output%>"
