@@ -31,11 +31,7 @@ variable "host_id" {
   type        = string
   default     = null
 }
-variable "host_name" {
-  description = "ID of a dedicated host that the instance will be assigned to. Use when an instance is to be launched on a specific dedicated host"
-  type        = string
-  default     = "<%= results.'ansible_host'%>"
-}
+
 
 variable "ebs_block_device_name" {
   description = "Additional EBS block devices to attach to the instance"
@@ -145,3 +141,24 @@ default = {
   }
 
 }
+
+
+variable "host_name" {
+  description = "ID of a dedicated host that the instance will be assigned to. Use when an instance is to be launched on a specific dedicated host"
+  type        = string
+  default     = "<%= results.'ansible_host'%>"
+}
+
+variable "host_name1" {
+  description = "ID of a dedicated host that the instance will be assigned to. Use when an instance is to be launched on a specific dedicated host"
+  type        = string
+  default     = "<%=results.generateHostname.Output%>"
+}
+
+variable "host_name1" {
+  description = "ID of a dedicated host that the instance will be assigned to. Use when an instance is to be launched on a specific dedicated host"
+  type        = string
+  default     = "<%=results.generate_hostname_output.generate_hostname_output%>"
+}
+
+
