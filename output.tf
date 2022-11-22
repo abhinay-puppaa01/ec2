@@ -88,6 +88,14 @@ output "host_name" {
   value       = var.host_name
 }
 
+output "host_name1" {
+  description = "The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`"
+  value       = var.host_name1
+}
+output "host_name2" {
+  description = "The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`"
+  value       = var.host_name2
+}
 
 
 /*
